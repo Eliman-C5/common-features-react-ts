@@ -1,10 +1,5 @@
 import React, { createContext, useState } from 'react'
-import { PropChildren } from '../interfaces/app_interfaces';
-
-interface TranslateMode { 
-  isSpanishActive: boolean; 
-  setIsSpanishActive: React.Dispatch<React.SetStateAction<boolean>>
-}
+import { PropChildren, TranslateMode } from '../interfaces/app_interfaces';
 
 //1.- We call createContext in a file inside context folder
 export const LanguageContext = createContext<TranslateMode>({} as TranslateMode);
